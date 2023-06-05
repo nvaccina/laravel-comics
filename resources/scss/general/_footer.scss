@@ -1,0 +1,77 @@
+.top{
+    min-height: 300px;
+    background-image: url(../../img/footer-bg.jpg);
+    .container{
+      @include centerFlex('between');
+      .menu_footer{
+        @include centerFlex('horizontal');
+        .col{
+          padding: 20px 20px 20px 0;
+          h4{
+          text-transform: uppercase;
+          padding: 10px 0;
+          }
+          a{
+            color: #959595;
+            font-size: 12px;
+            &:hover{
+              color: $primary-color;
+            }
+          }
+        }
+      }
+      .big_logo{
+        @include centerFlex('vertical');
+        height: 300px;
+        overflow: hidden;
+
+        img{
+          width: 450px;
+        }
+      }
+    }
+  }
+  .bottom{
+    background-color: #303030;
+    .container{
+      @include centerFlex('between');
+      .button_sign{
+        cursor: pointer;
+        padding: 10px;
+        border: 2px solid $primary-color;
+        &:hover{
+          background-color: $secondary-color;
+          a{
+            color: $primary-color;
+          }
+        }
+        a{
+          color: $secondary-color;
+          font-size: 14px;
+        }
+      }
+      .social{
+        @include centerFlex('both');
+        h4{
+          color: $primary-color;
+          font-weight: 700;
+          text-transform: uppercase;
+          padding-right: 10px
+        }
+        nav{
+          ul{
+            @include centerFlex('both');
+            a{
+              @include centerFlex('vertical');
+              padding: 0 10px;
+              width: 50px;
+              &:hover{
+                filter: invert(200%) brightness(200%);
+              }
+            }
+          }
+
+      }
+      }
+    }
+  }

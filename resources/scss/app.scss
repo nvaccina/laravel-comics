@@ -1,5 +1,15 @@
 @import "~bootstrap/scss/bootstrap";
 
+@import './general/variables';
+@import './general/mixin';
+@import './general/general';
+@import './general/variables';
+@import './general/typography';
+@import './general/utils';
+@import './general/header';
+@import './general/footer';
+
+/*
 .row {
     > * {
         height: 100vh;
@@ -17,4 +27,4 @@
 
 img {
     max-height: 150px;
-}
+}*/
