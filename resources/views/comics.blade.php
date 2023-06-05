@@ -1,20 +1,39 @@
+@extends('layout.main')
+
+@section('content')
+
+    <main>
+        <div class="container">
+        <h4>current series</h4>
+
+        <div class="cards-wrapper">
+
+            @foreach ($comics as $film )
+
+                <div class="card">
+                    <div class="image_container">
+
+                    <img src="{{ $film['thumb'] }}" alt="{{$film['title']}}">
+
+                    </div>
+
+                    <p>{{$film['title']}}</p>
+
+                </div>
+
+            @endforeach
 
 
-<main>
-    <div class="container">
-      <h4>current series</h4>
 
-      <div class="cards-wrapper">
+            <Cards
+            v-for="(card, index) in DcComics"
+            :nameSeries="card.series"
+            />
+        </div>
+        <div class="button_load">
+            <a href="#">LOAD MORE</a>
+        </div>
+        </div>
+    </main>
 
-        <Cards
-          v-for="(card, index) in DcComics"
-          :key="index"
-          :image="card.thumb"
-          :nameSeries="card.series"
-        />
-      </div>
-      <div class="button_load">
-          <a href="#">LOAD MORE</a>
-      </div>
-    </div>
-  </main>
+@endsection
