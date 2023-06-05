@@ -1,5 +1,6 @@
 @php
     $footer_menu = config('menus.footer_menu');
+    $footer_icon = config('menus.footer_icon');
 @endphp
 
 <footer>
@@ -79,13 +80,14 @@
           <h4>follow us</h4>
           <nav>
             <ul>
-              <li
-                v-for=in footerIcon"
-              >
-                <a href="#">
-                  <img :src="icon.image" alt="">
-                </a>
-              </li>
+                @foreach ($footer_icon as $icon)
+                    <li>
+                        <a href="{{$icon['href']}}">
+                            <img src="/img/icons/{{$icon['image']}}" alt="">
+                        </a>
+                    </li>
+                @endforeach
+
             </ul>
           </nav>
         </div>

@@ -4,8 +4,8 @@
 
   <div class="visa_card">
     <div class="container">
-        <span>DC POWER VISA</span>
-        <span>ADDITIONAL DC SITES</span>
+        <span>DC POWER VISA <i class="fa-regular fa-registered fs-10"></i> </span>
+        <span>ADDITIONAL DC SITES </span>
     </div>
 
   </div>
@@ -13,7 +13,7 @@
     <div class="container ht-80">
       <div class="logo">
         <a href="#">
-          <img src="/logo/dc-logo.png" alt="Logo Dc">
+          <img src="/img/logo/dc-logo.png" alt="Logo Dc">
         </a>
       </div>
 

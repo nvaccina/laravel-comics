@@ -1,13 +1,14 @@
 .visa_card{
     background-color: $primary-color;
-    font-size: 12px;
+    font-size: 10px;
     font-weight: bold;
-    padding: 2px 0;
+    color: $secondary-color;
+    padding: 5px 0;
     .container{
         display: flex;
-        flex-direction: row-reverse;
-        span{
-            padding: 0 10px;
+        justify-content: end;
+        span:first-child{
+            padding: 0 50px;
         }
     }
 }

@@ -7,7 +7,7 @@
     ul{
       @include centerFlex('both');
       li{
-        margin: 0 20px;
+        margin: 0 15px;
         transition: all .2s;
         &:hover{
           transform: scale(1.1)

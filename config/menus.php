@@ -90,7 +90,7 @@ return [
                 "text" => "Comics",
             ],
             [
-                "href" => "movie",
+                "href" => "movies",
                 "text" => "Movie",
             ],
 
@@ -103,7 +103,7 @@ return [
                 "text" => "Games"
             ],
             [
-                "href" => "video",
+                "href" => "videos",
                 "text" => "Video"
             ],
             [
@@ -194,5 +194,29 @@ return [
                 "text" => "DC Power Visa"
             ]
         ]
+    ],
+
+    "footer_icon" => [
+        [
+            "href" => "#",
+            "image" => "footer-facebook.png",
+        ],
+        [
+            "href" => "#",
+            "image" => "footer-twitter.png",
+        ],
+        [
+            "href" => "#",
+            "image" => "footer-youtube.png",
+        ],
+        [
+            "href" => "#",
+            "image" => "footer-pinterest.png",
+        ],
+        [
+            "href" => "#",
+            "image" => "footer-periscope.png",
+        ]
     ]
+
 ];

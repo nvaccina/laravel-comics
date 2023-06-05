@@ -6,27 +6,11 @@
 @import './general/variables';
 @import './general/typography';
 @import './general/utils';
-@import './general/header';
-@import './general/jumbotron';
-@import './general/footer';
-@import './general/comics';
-@import './general/cta';
-/*
-.row {
-    > * {
-        height: 100vh;
 
-        display: flex;
-        justify-content: center;
-        align-items: center;
+@import './partials/header';
+@import './partials/jumbotron';
+@import './partials/footer';
+@import './partials/home';
+@import './partials/comics';
+@import './partials/cta';
 
-        color: lightcoral;
-        background-color: aquamarine;
-        background-image: url('../img/laravel.png');
-        background-size: 50px 50px;
-    }
-}
-
-img {
-    max-height: 150px;
-}*/

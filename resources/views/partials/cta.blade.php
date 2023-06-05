@@ -11,7 +11,7 @@
 
                     <li>
                         <a href="{{$cta['href']}}">
-                            <img src="/resources/img/{{$cta['image']}}" alt="{{$cta['text']}}">
+                            <img src="/img/cta/{{$cta['image']}}" alt="{{$cta['text']}}">
                             <p>{{$cta['text']}}</p>
                         </a>
                     </li>
