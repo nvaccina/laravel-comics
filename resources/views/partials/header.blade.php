@@ -27,7 +27,11 @@
 
             @endforeach
 
+            <input class="nv_input" type="text" placeholder="Search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+
         </ul>
+
       </nav>
     </div>
   </header>
