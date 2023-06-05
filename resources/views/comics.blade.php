@@ -12,28 +12,19 @@
 
                 <div class="card">
                     <div class="image_container">
-
                     <img src="{{ $film['thumb'] }}" alt="{{$film['title']}}">
-
                     </div>
-
                     <p>{{$film['title']}}</p>
-
                 </div>
 
             @endforeach
 
-
-
-            <Cards
-            v-for="(card, index) in DcComics"
-            :nameSeries="card.series"
-            />
         </div>
         <div class="button_load">
             <a href="#">LOAD MORE</a>
         </div>
         </div>
+
     </main>
 
 @endsection

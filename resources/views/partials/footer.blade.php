@@ -1,29 +1,34 @@
+@php
+    $footer_menu = config('menus.footer_menu');
+@endphp
+
 <footer>
     <div class="top">
       <div class="container">
-        <div class="menu_footer">
 
+        <div class="menu_footer">
           <div class="col">
             <nav>
               <h4>Dc Comics</h4>
               <ul>
-                <li
-                  v-for="( index) in footerMenu.dcComics"
-                  :key="index"
-                >
-                  <a href="#">link</a>
-                </li>
+                @foreach ($footer_menu['dcComics'] as $item)
+                    <li>
+                        <a href="{{$item['href']}}">{{$item['text']}}</a>
+                    </li>
+
+                @endforeach
+
               </ul>
             </nav>
             <nav>
               <h4>Shop</h4>
               <ul>
-                <li
-                  v-for="in footerMenu.shop"
+                @foreach ($footer_menu['shop'] as $item)
+                    <li>
+                        <a href="{{$item['href']}}">{{$item['text']}}</a>
+                    </li>
 
-                >
-                  <a href="#">link</a>
-                </li>
+                @endforeach
               </ul>
             </nav>
 
@@ -33,11 +38,11 @@
             <nav>
               <h4>Dc</h4>
               <ul>
-                <li
-                  v-for=" in footerMenu.dc"
-                >
-                  <a href="#">link</a>
-                </li>
+                @foreach ($footer_menu['dc'] as $item)
+                    <li>
+                        <a href="{{$item['href']}}">{{$item['text']}}</a>
+                    </li>
+                @endforeach
               </ul>
             </nav>
           </div>
@@ -46,11 +51,11 @@
             <nav>
               <h4>Sites</h4>
               <ul>
-                <li
-                  v-for="in footerMenu.sites"
-                >
-                  <a href="#">link</a>
-                </li>
+                @foreach ($footer_menu['sites'] as $item)
+                    <li>
+                        <a href="{{$item['href']}}">{{$item['text']}}</a>
+                    </li>
+                @endforeach
               </ul>
             </nav>
           </div>

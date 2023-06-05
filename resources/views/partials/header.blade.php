@@ -2,6 +2,13 @@
     $main_menu = config('menus.main_menu');
 @endphp
 
+  <div class="visa_card">
+    <div class="container">
+        <span>DC POWER VISA</span>
+        <span>ADDITIONAL DC SITES</span>
+    </div>
+
+  </div>
   <header>
     <div class="container ht-80">
       <div class="logo">

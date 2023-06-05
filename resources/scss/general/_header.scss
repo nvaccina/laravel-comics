@@ -1,3 +1,17 @@
+.visa_card{
+    background-color: $primary-color;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 2px 0;
+    .container{
+        display: flex;
+        flex-direction: row-reverse;
+        span{
+            padding: 0 10px;
+        }
+    }
+}
+
 header{
     .container{
       @include centerFlex('between');
