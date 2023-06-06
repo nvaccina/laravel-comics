@@ -21,6 +21,11 @@
   }
 }
 
+//LARGHEZZA
+.w-100{
+  width: 100%;
+}
+
 //FONT SIZE
 .fs{
   &-10{
@@ -53,14 +58,48 @@
 
 .pl{
   &-40{
-    padding-left: 40px;
+    padding-left: 40px !important;
   }
   &-30{
     padding-left: 30px;
   }
 }
 
+.py{
+  &-30{
+    padding: 30px 0;
+  }
+  &-10{
+    padding: 10px 0;
+  }
+}
+.pb{
+  &-20{
+    padding-bottom: 20px;
+  }
+  &-80{
+    padding-bottom: 80px;
+  }
+}
+
+//MARGIN
+.my{
+  &-40{
+    margin-top: 40px;
+    margin-bottom: 50px;
+  }
+}
+.mb{
+  &-30{
+    margin-bottom: 30px 0;
+  }
+}
+
+
 //COLORS
+.primary_c{
+  color: $primary-color;
+}
 .grey_color{
   color: $grey_color;
 }
@@ -81,10 +120,9 @@
 }
 
 //BORDER
-
 .bb{
-  &-ligth_grey{
-    border-bottom: 3px solid #E3E3E3;
+  &-grey{
+    border-bottom: 1px solid #E3E3E3;
   }
 }
 

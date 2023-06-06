@@ -8,60 +8,61 @@
       <div class="container">
 
         <div class="menu_footer">
-          <div class="col">
-            <nav>
-              <h4>Dc Comics</h4>
-              <ul>
-                @foreach ($footer_menu['dcComics'] as $item)
-                    <li>
-                        <a href="{{route($item['href'])}}">{{$item['text']}}</a>
-                    </li>
-
-                @endforeach
-
-              </ul>
-            </nav>
-            <nav>
-              <h4>Shop</h4>
-              <ul>
-                @foreach ($footer_menu['shop'] as $item)
-                    <li>
-                        <a href="{{route($item['href'])}}">{{$item['text']}}</a>
-                    </li>
-
-                @endforeach
-              </ul>
-            </nav>
-
+          <div class="row">
+            <div class="col">
+              <nav>
+                <h4>Dc Comics</h4>
+                <ul>
+                  @foreach ($footer_menu['dcComics'] as $item)
+                      <li>
+                          <a href="{{route($item['href'])}}">{{$item['text']}}</a>
+                      </li>
+                  @endforeach
+                </ul>
+              </nav>
+              <nav>
+                <h4>Shop</h4>
+                <ul>
+                  @foreach ($footer_menu['shop'] as $item)
+                      <li>
+                          <a href="{{route($item['href'])}}">{{$item['text']}}</a>
+                      </li>
+                  @endforeach
+                </ul>
+              </nav>
+            </div>
+            <div class="col">
+              <nav>
+                <h4>Dc</h4>
+                <ul>
+                  @foreach ($footer_menu['dc'] as $item)
+                      <li>
+                          <a href="{{route($item['href'])}}">{{$item['text']}}</a>
+                      </li>
+                  @endforeach
+                </ul>
+              </nav>
+            </div>
+            <div class="col">
+              <nav>
+                <h4>Sites</h4>
+                <ul>
+                  @foreach ($footer_menu['sites'] as $item)
+                      <li>
+                          <a href="{{route($item['href'])}}">{{$item['text']}}</a>
+                      </li>
+                  @endforeach
+                </ul>
+              </nav>
+            </div>
+          </div>
+          <div class="row pb-20">
+            <p class="credits fs-14">All Site Content TM and &#169 2020 DC Entertainment, unless otherwise <a href="#" class="primary_c nv_link">noted here</a>. All rights reserved.<br> <a href="#" class="primary_c nv_link">Cookies Settings</a></p>
           </div>
 
-          <div class="col">
-            <nav>
-              <h4>Dc</h4>
-              <ul>
-                @foreach ($footer_menu['dc'] as $item)
-                    <li>
-                        <a href="{{route($item['href'])}}">{{$item['text']}}</a>
-                    </li>
-                @endforeach
-              </ul>
-            </nav>
-          </div>
-
-          <div class="col">
-            <nav>
-              <h4>Sites</h4>
-              <ul>
-                @foreach ($footer_menu['sites'] as $item)
-                    <li>
-                        <a href="{{route($item['href'])}}">{{$item['text']}}</a>
-                    </li>
-                @endforeach
-              </ul>
-            </nav>
-          </div>
 
         </div>
+
         <div class="big_logo">
           <img src="{{Vite::asset('resources/img/dc-logo-bg.png')}}" alt="">
         </div>

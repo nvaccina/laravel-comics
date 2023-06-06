@@ -3,7 +3,7 @@
 @section('content')
 
     <main>
-        <div class="container">
+      <div class="container">
         <h4>current series</h4>
 
         <div class="cards-wrapper">
@@ -26,8 +26,10 @@
         <div class="button_load">
             <a href="#">LOAD MORE</a>
         </div>
-        </div>
+      </div>
 
     </main>
+
+    @include('partials.cta')
 
 @endsection
