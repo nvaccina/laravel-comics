@@ -1,4 +1,4 @@
-@mixin centerFlex($type: 'both'){
+@mixin centerFlex($type: 'flex'){
   display: flex;
 
   @if $type == 'vertical'{

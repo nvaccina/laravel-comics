@@ -1,6 +1,5 @@
 
-
-// Classe ht x altezza
+//ALTEZZA
 .ht{
   &-0{
     height: 0;
@@ -22,9 +21,70 @@
   }
 }
 
-//Classe per dimensione font
+//FONT SIZE
 .fs{
   &-10{
     font-size: 10px;
   }
+  &-12{
+    font-size: 12px;
+  }
+  &-14{
+    font-size: 14px;
+  }
 }
+
+//FONT WEIGHT
+.fw{
+  &-bold{
+    font-weight: bold;
+  }
+}
+
+//PADDING
+.pr{
+  &-10{
+    padding-right: 10px;
+  }
+  &-30{
+    padding-right: 30px;
+  }
+}
+
+.pl{
+  &-40{
+    padding-left: 40px;
+  }
+  &-30{
+    padding-left: 30px;
+  }
+}
+
+//COLORS
+.grey_color{
+  color: $grey_color;
+}
+.blue_color{
+  color: #003F5E;
+}
+.acqua_color{
+  color: #37AAD9;
+}
+
+
+//LINE-HEIGHT
+
+.ln{
+  &-25{
+    line-height: 25px;
+  }
+}
+
+//BORDER
+
+.bb{
+  &-ligth_grey{
+    border-bottom: 3px solid #E3E3E3;
+  }
+}
+

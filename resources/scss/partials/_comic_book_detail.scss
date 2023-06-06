@@ -1,4 +1,4 @@
-main{
+.nv_back{
   padding-top: 0;
   background-color: $secondary-color;
   .nv_blue{
@@ -7,16 +7,81 @@ main{
   }
   .book_detail{
     color: black;
-    width: 50%;
+    width: 60%;
     margin: 30px auto;
     .locandina{
       position: absolute;
       bottom: 130px;
       width: 120px;
+      border: 1px solid $secondary-color;
+      text-align: center;
+      .gallery{
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        width: 118px;
+        transform: translate(-50%);
+        background-color: $primary-color;
+        font-size: 10px;
+        color: $secondary-color;
+        font-weight: 600;
+      }
     }
-    h4{
-      color: #003F5E;
+    .book_text_top{
+      @include centerFlex('flex');
+      .col-8{
+        width: calc(100% / 12 * 8);
+        h3{
+          color: #003F5E;
+          padding: 20px 0;
+          text-transform: uppercase;
+        }
+        .green_row{
+          @include centerFlex('vertical');
+          background-color: #55BA59;
+          color: $secondary-color;
+          font-weight: bold;
+          font-size: 14px;
+          border-bottom: 1px solid #003F5E;
+          margin-bottom: 20px;
+          .col-8{
+            width: calc(100% / 12 * 8);
+            @include centerFlex('between');
+            border-right: 1px solid #003F5E;
+            padding: 15px;
+          }
+          .col-4{
+            width: calc(100% / 12 * 4);
+            @include centerFlex('both');
+            padding: 15px;
+          }
+          .nv_text_opacity{
+            opacity: 0.5;
+          }
+        }
+      }
+      .col-4{
+        width: calc(100% / 12 * 4);
+        padding: 20px;
+        h6{
+          color: $grey_color;
+          text-transform: uppercase;
+          display: flex;
+          justify-content: end;
+          padding-bottom: 4px;
+        }
+      }
     }
+    .info{
+      @include centerFlex('flex');
+      .col-5{
+        width: calc(100% / 12 * 6);
+        tr{
+          border-bottom: 3px solid #E3E3E3 !important;
+        }
+      }
+    }
+
   }
 }
 
