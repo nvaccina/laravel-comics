@@ -56,7 +56,7 @@
       <div class="small_container py-30">
         <div class="info">
           <div class="col-5">
-            <table>
+            <table class=" w-100">
               <tr>
                 <th class="blue_color bb-grey pb-20">Talent</th>
                 <th class="bb-grey pb-20"></th>
