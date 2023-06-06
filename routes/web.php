@@ -30,9 +30,19 @@ Route::get('/comics', function () {
     return view('comics', compact('comics'));
 })->name('comics');
 
-Route::get('/dettagli-fumetto', function () {
-  return view('comic_book_detail');
+
+Route::get('/dettagli-fumetto/{slug}', function ($slug) {
+  $comics = config('comics');
+
+  $comic_array = array_filter($comics, fn($item) => $item['slug'] === $slug);
+
+  $comic_book = $comic_array[array_key_first($comic_array)];
+
+  return view('comic_book_detail', compact('comic_book'));
+
 })->name('comic_book_detail');
+
+
 
 Route::get('/movies', function () {
     return view('movies');

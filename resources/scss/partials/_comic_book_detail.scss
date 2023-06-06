@@ -1,16 +1,21 @@
 main{
   padding-top: 0;
+  background-color: $secondary-color;
   .nv_blue{
     height: 50px;
     background-color: $primary-color;
   }
   .book_detail{
+    color: black;
     width: 50%;
     margin: 30px auto;
     .locandina{
       position: absolute;
-      bottom: - 40px;
+      bottom: 130px;
       width: 120px;
+    }
+    h4{
+      color: #003F5E;
     }
   }
 }

@@ -11,10 +11,13 @@
             @foreach ($comics as $comic_book )
 
                 <div class="card">
+                  <a href="{{route('comic_book_detail', ['slug' => $comic_book['slug']])}}">
                     <div class="image_container">
-                    <img src="{{ $comic_book['thumb'] }}" alt="{{$comic_book['title']}}">
+                      <img src="{{ $comic_book['thumb'] }}" alt="{{$comic_book['title']}}">
                     </div>
                     <p>{{$comic_book['title']}}</p>
+                  </a>
+
                 </div>
 
             @endforeach

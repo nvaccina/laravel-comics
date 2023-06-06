@@ -6,14 +6,14 @@
     <div class="nv_blue"></div>
     <div class="book_detail">
 
-      <img class="locandina" src="https://m.media-amazon.com/images/I/91ytkCTqkEL._AC_UF1000,1000_QL80_.jpg" alt="">
+      <img class="locandina" src="{{$comic_book['thumb']}}" alt="{{$comic_book['title']}}">
 
       <div class="book_text">
         <div class="col">
-          <h4>TITLE</h4>
-          <div class="green_row">PREZZO | AVAIBLE | Cheeck Availability</div>
+          <h4>{{$comic_book['title']}}</h4>
+          <div class="green_row">PRICE: {{$comic_book['price']}} | AVAIBLE | Cheeck Availability</div>
 
-          <p>Descrizione</p>
+          <p>{{$comic_book['description']}}</p>
         </div>
 
         <div class="col">
