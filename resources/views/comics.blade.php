@@ -8,13 +8,13 @@
 
         <div class="cards-wrapper">
 
-            @foreach ($comics as $film )
+            @foreach ($comics as $comic_book )
 
                 <div class="card">
                     <div class="image_container">
-                    <img src="{{ $film['thumb'] }}" alt="{{$film['title']}}">
+                    <img src="{{ $comic_book['thumb'] }}" alt="{{$comic_book['title']}}">
                     </div>
-                    <p>{{$film['title']}}</p>
+                    <p>{{$comic_book['title']}}</p>
                 </div>
 
             @endforeach

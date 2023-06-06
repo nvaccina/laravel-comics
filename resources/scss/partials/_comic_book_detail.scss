@@ -1,0 +1,17 @@
+main{
+  padding-top: 0;
+  .nv_blue{
+    height: 50px;
+    background-color: $primary-color;
+  }
+  .book_detail{
+    width: 50%;
+    margin: 30px auto;
+    .locandina{
+      position: absolute;
+      bottom: - 40px;
+      width: 120px;
+    }
+  }
+}
+

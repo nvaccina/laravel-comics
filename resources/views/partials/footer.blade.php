@@ -14,7 +14,7 @@
               <ul>
                 @foreach ($footer_menu['dcComics'] as $item)
                     <li>
-                        <a href="{{$item['href']}}">{{$item['text']}}</a>
+                        <a href="{{route($item['href'])}}">{{$item['text']}}</a>
                     </li>
 
                 @endforeach
@@ -26,7 +26,7 @@
               <ul>
                 @foreach ($footer_menu['shop'] as $item)
                     <li>
-                        <a href="{{$item['href']}}">{{$item['text']}}</a>
+                        <a href="{{route($item['href'])}}">{{$item['text']}}</a>
                     </li>
 
                 @endforeach
@@ -41,7 +41,7 @@
               <ul>
                 @foreach ($footer_menu['dc'] as $item)
                     <li>
-                        <a href="{{$item['href']}}">{{$item['text']}}</a>
+                        <a href="{{route($item['href'])}}">{{$item['text']}}</a>
                     </li>
                 @endforeach
               </ul>
@@ -54,7 +54,7 @@
               <ul>
                 @foreach ($footer_menu['sites'] as $item)
                     <li>
-                        <a href="{{$item['href']}}">{{$item['text']}}</a>
+                        <a href="{{route($item['href'])}}">{{$item['text']}}</a>
                     </li>
                 @endforeach
               </ul>
@@ -82,7 +82,7 @@
             <ul>
                 @foreach ($footer_icon as $icon)
                     <li>
-                        <a href="{{$icon['href']}}">
+                        <a href="{{route($icon['href'])}}">
                             <img src="/img/icons/{{$icon['image']}}" alt="">
                         </a>
                     </li>

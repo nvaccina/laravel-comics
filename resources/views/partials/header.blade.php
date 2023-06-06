@@ -21,9 +21,9 @@
         <ul class="ht-80">
             @foreach ( $main_menu as $item)
 
-                <li class="ht-80">
-                    <a class="ht-80 {{Route::currentRouteName() === $item['text'] ? 'active' : ''}}" href="{{ route($item['href']) }}">{{$item['text']}}</a>
-                </li>
+              <li class="ht-80">
+                <a class="ht-80 {{Route::currentRouteName() === $item['text'] ? 'active' : ''}}" href="{{ route($item['href']) }}">{{$item['text']}}</a>
+              </li>
 
             @endforeach
 

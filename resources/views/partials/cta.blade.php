@@ -10,7 +10,7 @@
                 @foreach ($cta_menu as $cta)
 
                     <li>
-                        <a href="{{$cta['href']}}">
+                        <a href="{{route($cta['href'])}}">
                             <img src="/img/cta/{{$cta['image']}}" alt="{{$cta['text']}}">
                             <p>{{$cta['text']}}</p>
                         </a>

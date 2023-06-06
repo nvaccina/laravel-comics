@@ -14,6 +14,6 @@
         </p>
 
     </div>
-  </main>
+</main>
 
 @endsection
